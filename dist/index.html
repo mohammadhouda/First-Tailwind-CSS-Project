@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Tailwind !</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<nav class="container flex justify-between place-items-center mx-auto p-6 text-cyan-800">
+    <div>
+        <img src="../assets/tailwindcss-logotype.svg" alt="svg" class="logo w-40">
+    </div>
+    <div class="pages hidden md:flex space-x-6">
+        <li class="list-none"><a class="transition-colors text-black hover:duration-300 hover:text-orange-500" href="#">Portfolio</a></li>
+        <li class="list-none"><a class="transition-colors text-black hover:duration-300 hover:text-orange-500" href="#">About</a></li>
+        <li class="list-none"><a class="transition-colors text-black hover:duration-300 hover:text-orange-500" href="#">Contact</a></li>
+        <li class="list-none"><a class="transition-colors text-black hover:duration-300 hover:text-orange-500" href="#">Social</a></li>
+        <li class="list-none"><a class=" bg-orange-500 text-white rounded-full py-2 px-6 transition-colors ease-in-out hover:bg-black" href="#">Call Me</a></li>
+    
+    </div>
+    <button class="menu md:hidden"><i class="fa-solid fa-bars text-2xl"></i></button>
+    <div class="md:hidden">
+        <div class="mobile-menu absolute flex hidden flex-col bg-gray-50 py-8 top-20 left-6 right-6 items-center space-y-4 font-bold drop-shadow-lg border-gray-300">
+            <li class="list-none"><a class="">Portfolio</a></li>
+            <li class="list-none"><a >About</a></li>
+            <li class="list-none"><a >Contact</a></li>
+            <li class="list-none"><a >Social</a></li>
+            <li class="list-none"><a class=" bg-orange-500 text-white rounded-full py-2 px-6 transition-colors ease-in-out hover:bg-black" href="#">Call Me</a></li>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container mx-auto px-6 flex flex-col-reverse space-x-6 py-8 text-center md:text-left place-items-center text-black md:flex-row">
+        <div class="md:w-1/2 flex flex-col space-y-6 ">
+            <h1 class="font-bold text-3xl md:text-5xl">Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam delectus perferendis impedit possimus doloremque et necessitatibus commodi labore quaerat esse.</p>
+            <a class=" bg-orange-500 self-center md:self-start text-white rounded-full py-2 px-6 transition-colors ease-in-out hover:bg-black" href="#">Call Me</a>
+        </div>
+            
+        <div class="md:w-1/2">
+            <img src="../assets/undraw_healthy_habit_kwe6.svg" alt="svg">
+        </div>
+    </div>
+</section>
+
+<section class="author">
+    <div class="container my-32 mx-auto text-center">
+        <h2 class="font-bold text-4xl">Lorem ipsum dolor sit amet consectetur.</h2>
+        <p class="max-w-5xl mt-8 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam cumque laborum nostrum nisi neque quo a perferendis possimus recusandae!</p>
+        <div class="mt-10 flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0">
+            <div class="md:w-1/3 flex flex-col items-center p-6 space-y-2 rounded-lg border bg-slate-200 transition-colors duration-300 hover:bg-white border-slate-300">
+                <img class="w-16 rounded-full -mt-12" src="../assets/adam.jpg" alt="adam">
+                <h5 class="font-bold text-lg text-black">Adam Sandler</h5>
+                <p class="leading-6 text-sm text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt omnis nemo impedit hic, sapiente iure iste ullam facere quidem?</p>
+            </div>
+
+            <div class="md:w-1/3 flex flex-col items-center p-6 space-y-2 rounded-lg border bg-slate-200 transition-colors duration-300 hover:bg-white border-slate-300">
+                <img class="w-16 rounded-full -mt-12" src="../assets/madeline.jpg" alt="adam">
+                <h5 class="font-bold text-lg text-black">Madelin Bauer</h5>
+                <p class="leading-6 text-sm text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt omnis nemo impedit hic, sapiente iure iste ullam facere quidem?</p>
+            </div>
+
+            <div class="md:w-1/3 flex flex-col items-center p-6 space-y-2 rounded-lg border bg-slate-200 transition-colors duration-300 hover:bg-white border-slate-300">
+                <img class="w-16 rounded-full -mt-12" src="../assets/marcel.jpg" alt="adam">
+                <h5 class="font-bold text-lg text-black">Marcel Khalifa</h5>
+                <p class="leading-6 text-sm text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt omnis nemo impedit hic, sapiente iure iste ullam facere quidem?</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<footer class="bg-black">
+    <div class="container flex flex-col-reverse md:flex-row mx-auto text-white px-5 py-10 justify-between space-y-8 md:space-y-0">
+        <div class="flex flex-col items-center justify-between space-y-12 md:space-y-2 md:items-start">
+            <div class="text-center m-6 md:hidden md:mt-0">
+                CopyRights &copy; 2024.
+            </div>
+            <div>
+                <img class="h-8" src="../assets/tailwindcss-logotype.svg" alt="logo"> 
+            </div>
+            <div class="flex space-x-4">
+               <a href="#"><i class="fa-brands fa-square-facebook text-3xl"></i></a>
+               <a href="#"><i class="fa-brands fa-twitter text-3xl"></i></a>
+               <a href="#"><i class="fa-brands fa-instagram text-3xl"></i></a>
+               <a href="#"><i class="fa-brands fa-linkedin text-3xl"></i></a>
+               <a href="#"><i class="fa-brands fa-youtube text-3xl"></i></a>
+            </div>
+        </div>
+        <div class="flex justify-around space-x-32">
+            <div class="flex flex-col space-y-3">
+                <a href="#" class="hover:text-slate-300">Home</a>
+                <a href="#" class="hover:text-slate-300">About</a>
+                <a href="#" class="hover:text-slate-300">Contact</a>
+            </div>
+            <div class="flex flex-col space-y-3">
+                <a href="#" class="hover:text-slate-300">Imprints</a>
+                <a href="#" class="hover:text-slate-300">Privacy</a>
+                <a href="#" class="hover:text-slate-300">Credits</a>
+            </div>
+        </div>
+        <div class="flex flex-col justify-between ">
+            <div class="flex space-x-3">
+                <input type="text" class="flex-1 rounded-full py-2 px-6 text-black" placeholder="Subscribe to new settler">
+                <button class="bg-orange-500 rounded-full px-4 py-2 hover:bg-slate-500">Go</button>
+            </div>
+            <div class="hidden md:block">
+                CopyRights &copy; 2024.
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<script src="app.js"></script>
+</body>
+</html>
